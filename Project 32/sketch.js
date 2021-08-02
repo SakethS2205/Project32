@@ -5,7 +5,7 @@ const Constraint = Matter.Constraint;
 
 var engine, world;
 var backgroundImg;
-var hour;
+var time;
 
 var bg = "sunrise.png";
 
@@ -56,7 +56,7 @@ async function getBackgroundImg(){
     console.log(time);
 
     
-    if(hour>=0 && hour<18 ){
+    if(time>=0 && time<18 ){
         bg = "sunrise.png";
     }
     else{
